@@ -10,3 +10,6 @@ root.render(
     <App />
   </React.StrictMode>
 );
+export default function App() {
+  return <div className="p-4 text-center text-xl">Hello World!</div>;
+}
