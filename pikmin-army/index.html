@@ -5,11 +5,15 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
   <title>Pikmin Army | 皮克敏蘑菇遠征隊招募中</title>
   
-  <!-- SEO -->
+  <!-- SEO & Social Sharing -->
   <meta name="description" content="全台最強皮克敏 Bloom 蘑菇戰鬥媒合平台。快速發起邀請、加入全球遠征隊，一起挑戰巨大蘑菇！">
   <meta property="og:title" content="Pikmin Army - 皮克敏蘑菇遠征隊招募中">
+  <meta property="og:description" content="正在尋找隊友打巨大蘑菇嗎？點擊進入全球戰區，即時掌握所有招募資訊！">
   <meta property="og:image" content="https://picsum.photos/seed/pikmin-army/1200/630">
+  <meta property="og:type" content="website">
   <meta name="theme-color" content="#8BC34A">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
   
   <script src="https://cdn.tailwindcss.com"></script>
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -22,8 +26,13 @@
       background-color: #FAFAF5;
       overscroll-behavior-y: contain;
     }
-    ::-webkit-scrollbar { width: 6px; }
-    ::-webkit-scrollbar-thumb { background: #8BC34A; border-radius: 10px; }
+    ::-webkit-scrollbar {
+      width: 6px;
+    }
+    ::-webkit-scrollbar-thumb {
+      background: #8BC34A;
+      border-radius: 10px;
+    }
   </style>
 <script type="importmap">
 {
@@ -42,7 +51,7 @@
 </head>
 <body>
   <div id="root"></div>
-  <!-- Vite 專案中，src 必須指向你的進入點檔案 -->
-  <script type="module" src="/index.tsx"></script>
+  <!-- Vite 入口點 -->
+  <script type="module" src="./index.tsx"></script>
 </body>
 </html>
