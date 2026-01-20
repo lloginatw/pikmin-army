@@ -1,0 +1,13 @@
+[build]
+  # 根據你的 GitHub 結構，你的代碼是在 pikmin-army 資料夾內
+  base = "pikmin-army"
+  command = "npm run build"
+  publish = "dist"
+
+[build.environment]
+  NODE_VERSION = "20"
+
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200
