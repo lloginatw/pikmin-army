@@ -1,29 +1,61 @@
 <!DOCTYPE html>
-
 <html lang="zh-TW">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Pikmin Army | 皮克敏蘑菇遠征隊</title>
-
-  <meta name="description" content="皮克敏 Bloom 蘑菇戰鬥媒合平台" />
-  <meta name="theme-color" content="#8BC34A" />
-
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <title>Pikmin Army | 皮克敏蘑菇遠征隊招募中</title>
+  
+  <!-- SEO & Social Sharing -->
+  <meta name="description" content="全台最強皮克敏 Bloom 蘑菇戰鬥媒合平台。快速發起邀請、加入全球遠征隊，一起挑戰巨大蘑菇！">
+  <meta property="og:title" content="Pikmin Army - 皮克敏蘑菇遠征隊招募中">
+  <meta property="og:description" content="正在尋找隊友打巨大蘑菇嗎？點擊進入全球戰區，即時掌握所有招募資訊！">
+  <meta property="og:image" content="https://picsum.photos/seed/pikmin-army/1200/630">
+  <meta property="og:type" content="website">
+  <meta name="theme-color" content="#8BC34A">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  
   <script src="https://cdn.tailwindcss.com"></script>
-
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link
-    href="https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&display=swap"
-    rel="stylesheet"
-  />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&display=swap" rel="stylesheet">
+  
+  <style>
+    body {
+      font-family: 'Fredoka', sans-serif;
+      background-color: #FAFAF5;
+      overscroll-behavior-y: contain;
+      -webkit-tap-highlight-color: transparent;
+    }
+    ::-webkit-scrollbar {
+      width: 6px;
+    }
+    ::-webkit-scrollbar-thumb {
+      background: #8BC34A;
+      border-radius: 10px;
+    }
+    .safe-bottom {
+      padding-bottom: env(safe-area-inset-bottom);
+    }
+  </style>
+<script type="importmap">
+{
+  "imports": {
+    "react": "https://esm.sh/react@^19.2.3",
+    "react-dom/": "https://esm.sh/react-dom@^19.2.3/",
+    "react/": "https://esm.sh/react@^19.2.3/",
+    "@google/genai": "https://esm.sh/@google/genai@^1.37.0",
+    "lucide-react": "https://esm.sh/lucide-react@^0.562.0",
+    "@supabase/supabase-js": "https://esm.sh/@supabase/supabase-js@^2.90.1",
+    "vite": "https://esm.sh/vite@^7.3.1",
+    "@vitejs/plugin-react": "https://esm.sh/@vitejs/plugin-react@^5.1.2"
+  }
+}
+</script>
 </head>
-<body style="font-family: Fredoka, sans-serif">
+<body>
   <div id="root"></div>
-
-  <!-- 🔴 這一行「一定要有」 -->
-
-  <script type="module" src="./index.tsx"></script>
-
+  <!-- Vite 入口點：Vite 會根據 package.json 自動處理所有的 import -->
+  <script type="module" src="/index.tsx"></script>
 </body>
 </html>
